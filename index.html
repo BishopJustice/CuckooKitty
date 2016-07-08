@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Cuckoo Kitty</title>
+</head>
+<body>
+<!-- <audio loop="loop" autoplay="autoplay">  
+   <source src="audio/CuckooKittyTrack.mp3" />  
+   <source src="music.mp3" />  
+</audio>  -->
+<div class="content">
+<h1>Cuckoo Kitty</h1>
+<div class="cat-box">
+<img src="images/Kitty1.jpeg" id="cat-pic">
+
+<script type="text/javascript">
+function sleep(milliseconds) {
+  var start = new Date().getTime();
+  for (var i = 0; i < 1e7; i++) {
+    if ((new Date().getTime() - start) > milliseconds){
+      break;
+    }
+  }
+}
+
+
+for (x=1; x < 25; x++){
+    document.getElementById("cat-pic").src =  'images/Kitty' + x + '.jpeg';
+    sleep(3000)
+}
+
+
+
+</script>
+
+</div>
+</div>
+</body>
+</html>

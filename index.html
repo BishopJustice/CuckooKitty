@@ -3,6 +3,24 @@
 <head>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<title>Cuckoo Kitty</title>
+<script type="text/javascript">
+ 
+var imgArray = []
+            for (x=1; x<8; x++){
+                imgArray[x] = "images/Kitty" + x + ".jpeg"
+            }
+    console.log(imgArray)
+
+
+    var numOfImg = imgArray.length
+        elem = document.getElementById('imgDisplay');
+     
+     setInterval(function () {
+         var randomNum = Math.floor(Math.random()*(numOfImg));
+         document.getElementById('imgDisplay').src = imgArray[randomNum];
+    }, 3000);
+</script>
+
 </head>
 <body>
 <!-- <audio loop="loop" autoplay="autoplay">  
@@ -12,23 +30,9 @@
 <div class="content">
 <h1>Cuckoo Kitty</h1>
 <div class="cat-box">
-<img src="images/Kitty1.jpeg" id="cat-pic">
-
-<script type="text/javascript">
-function sleep(milliseconds) {
-  var start = new Date().getTime();
-  for (var i = 0; i < 1e7; i++) {
-    if ((new Date().getTime() - start) > milliseconds){
-      break;
-    }
-  }
-}
+<img src="images/Kitty3.jpeg" id="imgDisplay">
 
 
-for (x=1; x < 25; x++){
-    document.getElementById("cat-pic").src =  'images/Kitty' + x + '.jpeg';
-    sleep(3000)
-}
 
 
 

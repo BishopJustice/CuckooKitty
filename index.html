@@ -1,44 +1,21 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<title>Cuckoo Kitty</title>
-<script type="text/javascript">
- 
-var imgArray = []
-            for (x=1; x<8; x++){
-                imgArray[x] = "images/Kitty" + x + ".jpeg"
-            }
-    console.log(imgArray)
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Cuckoo Kitty</title>
+        <script src="decorate.js"></script>
 
-
-    var numOfImg = imgArray.length
-        elem = document.getElementById('imgDisplay');
-     
-     setInterval(function () {
-         var randomNum = Math.floor(Math.random()*(numOfImg));
-         document.getElementById('imgDisplay').src = imgArray[randomNum];
-    }, 3000);
-</script>
-
-</head>
-<body>
-<!-- <audio loop="loop" autoplay="autoplay">  
-   <source src="audio/CuckooKittyTrack.mp3" />  
-   <source src="music.mp3" />  
-</audio>  -->
-<div class="content">
-<h1>Cuckoo Kitty</h1>
-<div class="cat-box">
-<img src="images/Kitty3.jpeg" id="imgDisplay">
-
-
-
-
-
-</script>
-
-</div>
-</div>
-</body>
+    </head>
+    <body>
+        <audio loop="loop" autoplay="autoplay">
+            <source src="audio/CuckooKittyTrack.mp3" />
+            <source src="music.mp3" />
+        </audio>
+        <div class="content">
+            <h1>Cuckoo Kitty</h1>
+            <div class="cat-box">
+                <img src="http://thecatapi.com/api/images/get?size=med&type=jpg,png" id="imgDisplay">
+            </div>
+        </div>
+    </body>
 </html>

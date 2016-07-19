@@ -6,10 +6,19 @@
     font-weight: 300; 
     text-transform: uppercase;
     padding-top: 5%;
+    
 }
 
 .cat-box{
     padding-top: 10px;
-/*    max-width: 300px; 
-    max-height: 300px;*/
+}
+
+.img{
+    width:50%;
+    max-width:50px;
+    border: 5px solid red;
+}
+
+input[type="radio"]{
+  margin: 0px 10px 10px 0px;
 }

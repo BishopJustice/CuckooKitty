@@ -9,12 +9,21 @@
     <body>
         <audio loop="loop" autoplay="autoplay">
             <source src="audio/CuckooKittyTrack.mp3" />
-            <source src="music.mp3" />
         </audio>
         <div class="content">
             <h1>Cuckoo Kitty</h1>
+            <div id="start">
+            <input type="button" value="Start" onclick="selector('all');startFunction('all');show_buttons()"><br><br>
+            </div>
+            <div id="radios" style="display: none;">
+            <label for="all">All </label> <input type="radio" name="type" id="all" onclick="startFunction('all')" checked> 
+            <label for="hats">Hats </label> <input type="radio" name="type" id="hats" onclick="startFunction('hats')">
+            <label for="ties">Ties </label> <input type="radio" name="type" id="ties" onclick="startFunction('ties')">
+            <label for="sunglasses">Sunglasses</label> <input type="radio" name="type" id="sunglasses" onclick="startFunction('sunglasses')">
+            <label for="clothes">Clothes</label> <input type="radio" name="type" id="sunglasses" onclick="startFunction('clothes')">
+             </div>
             <div class="cat-box">
-                <img src="http://thecatapi.com/api/images/get?size=med&type=jpg,png" id="imgDisplay">
+                <img src="images/kitty3.jpeg" rel="prefetch" id="imgDisplay">
             </div>
         </div>
     </body>

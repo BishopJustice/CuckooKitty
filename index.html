@@ -14,14 +14,22 @@
             <h1>Cuckoo Kitty</h1>
             <div id="radios">
             <label for="all">All </label> <input type="radio" name="type" id="all" onclick="startFunction('all')" checked> 
-            <label for="hats">Hats </label> <input type="radio" name="type" id="hats" onclick="startFunction('hats')">
-            <label for="ties">Ties </label> <input type="radio" name="type" id="ties" onclick="startFunction('ties')">
-            <label for="sunglasses">Sunglasses</label> <input type="radio" name="type" id="sunglasses" onclick="startFunction('sunglasses')">
-            <label for="clothes">Clothes</label> <input type="radio" name="type" id="sunglasses" onclick="startFunction('clothes')">
+            <label for="hats">Hats </label> <input type="radio" name="type" id="hats" onclick="startFunction(this.id)">
+            <label for="ties">Ties </label> <input type="radio" name="type" id="ties" onclick="startFunction(this.id)">
+            <label for="sunglasses">Sunglasses</label> <input type="radio" name="type" id="sunglasses" onclick="startFunction(this.id)">
+            <label for="clothes">Clothes</label> <input type="radio" name="type" id="clothes" onclick="startFunction(this.id)"><br>
+            <!-- <button id="myButton" onclick="showMore()">Show More</button> -->
+            <div id="hiddenValues">
+            <label for="boxes">Boxes</label> <input type="radio" name="type" id="boxes" onclick="startFunction(this.id)">
+            <label for="sinks">Sinks</label> <input type="radio" name="type" id="sinks" onclick="startFunction(this.id)">
+            <label for="space">Space</label> <input type="radio" name="type" id="space" onclick="startFunction(this.id)">
+            <label for="caturday">Caturday</label> <input type="radio" name="type" id="caturday" onclick="startFunction(this.id)">
+            </div>
              </div>
             <div class="cat-box">
-                <img src="images/kitty3.jpeg" rel="prefetch" id="imgDisplay">
+                <img src="http://thecatapi.com/api/images/get?size=med&type=jpg,png&api_key=MTAzMzIw&" rel="prefetch" id="imgDisplay">
             </div>
+            
         </div>
     </body>
 </html>

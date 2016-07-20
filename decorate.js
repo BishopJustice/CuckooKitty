@@ -7,11 +7,11 @@ function show_buttons() {
 function selector(choice){
     if (choice == 'all'){
         document.getElementById('imgDisplay').src = "http://thecatapi.com/api/images/get?size=med&type=jpg,png&api_key=MTAzMzIw&" + new Date().getTime()
-        console.log(document.getElementById('imgDisplay').src)
-}
+        
+    }
     else{
         document.getElementById('imgDisplay').src = "http://thecatapi.com/api/images/get?size=med&type=jpg,png&api_key=MTAzMzIw&category="+ choice + "&" + new Date().getTime()
-        console.log(document.getElementById('imgDisplay').src)}
+    }
 }
 
 
@@ -19,11 +19,17 @@ var myVar;
 
 function startFunction(choice){
     clearInterval(myVar);
-    myVar = setInterval(selector, 3000, choice);
+    myVar = setInterval(selector, 2500, choice);
 }
 
 function myStopFunction() {
     clearInterval(myVar);
+}
+
+
+function showMore(){
+    document.getElementById('hiddenValues').style = "display: block;"
+    document.getElementById('myButton').style = "display: none;"
 }
 
 startFunction('all')
